@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="design_doc_mode" content="canvas">
+  <link rel="stylesheet" href="_ds/foundernexus-design-system-c60151d5-3c18-42e1-a081-7b6dee7c2760/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="_ds/foundernexus-design-system-c60151d5-3c18-42e1-a081-7b6dee7c2760/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/foundernexus-design-system-c60151d5-3c18-42e1-a081-7b6dee7c2760/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/foundernexus-design-system-c60151d5-3c18-42e1-a081-7b6dee7c2760/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/foundernexus-design-system-c60151d5-3c18-42e1-a081-7b6dee7c2760/tokens/base.css">
+  <link rel="stylesheet" href="_ds/foundernexus-design-system-c60151d5-3c18-42e1-a081-7b6dee7c2760/styles.css">
+  <script src="_ds/foundernexus-design-system-c60151d5-3c18-42e1-a081-7b6dee7c2760/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+</helmet>
+
+<!-- ============================================================ -->
+<!-- DIRECTION A — Editorial (light & warm)                       -->
+<!-- ============================================================ -->
+<div style="position:absolute; left:0; top:0; width:1280px;">
+  <div data-drags-parent="1" style="display:flex; align-items:center; gap:10px; margin:0 0 14px 4px;">
+    <span style="font:700 14px/1 var(--font-sans); color:#01052A; letter-spacing:-0.01em;">Direction A</span>
+    <span style="font:500 13px/1 var(--font-sans); color:#56646F;">Editorial — light &amp; warm · gated registration</span>
+  </div>
+
+  <div style="background:#fff; border:1px solid #ECEEF1; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(1,5,42,.08), 0 24px 60px rgba(1,5,42,.07);">
+
+    <!-- Header -->
+    <header style="display:flex; align-items:center; justify-content:space-between; height:74px; padding:0 56px; border-bottom:1px solid #EEF1F4;">
+      <div style="display:flex; align-items:center; gap:38px;">
+        <img src="assets/foundernexus-wordmark-navy.png" alt="FounderNexus" style="height:25px; width:auto;" />
+        <nav style="display:flex; gap:26px;">
+          <a href="#" style="font:600 14px/1 var(--font-sans); color:#01052A; text-decoration:none;">Events</a>
+          <a href="#" style="font:500 14px/1 var(--font-sans); color:#56646F; text-decoration:none;">How it works</a>
+          <a href="#" style="font:500 14px/1 var(--font-sans); color:#56646F; text-decoration:none;">Chapters</a>
+        </nav>
+      </div>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <a href="#" style="font:600 14px/1 var(--font-sans); color:#56646F; text-decoration:none;">Log in</a>
+        <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" size="sm" hint-size="150px,36px">Apply for membership</x-import>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section style="padding:56px 56px 60px; display:grid; grid-template-columns:1.06fr 0.94fr; gap:48px; align-items:start;">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:22px;">
+          <span style="display:inline-flex; align-items:center; gap:7px; height:28px; padding:0 11px; border-radius:9999px; background:#FCEDEC; color:#C0392B; font:600 12px/1 var(--font-sans);">
+            <span style="width:7px; height:7px; border-radius:50%; background:#E0483B; box-shadow:0 0 0 3px rgba(224,72,59,.16);"></span>Live session
+          </span>
+          <span style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#9EADBA;">Fundraising · Expert teardown</span>
+        </div>
+        <h1 style="font:700 56px/1.04 var(--font-display); letter-spacing:-0.03em; color:#01052A; margin:0;">Pitch Deck Teardown<span style="color:#007BE4;">.</span> Live.</h1>
+        <p style="font:400 20px/1.55 var(--font-sans); color:#475467; margin:22px 0 0; max-width:540px;">A seasoned VC opens a real founder's seed deck — slide by slide — and reacts exactly as he would in a partner meeting. No hypotheticals. No polished "after" version.</p>
+        <div style="margin-top:30px;">
+          <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#9EADBA; margin-bottom:13px;">Built for</div>
+          <div style="display:flex; gap:9px; flex-wrap:wrap;">
+            <span style="display:inline-flex; align-items:center; gap:8px; height:32px; padding:0 14px 0 12px; border-radius:9999px; background:#E8F6F4; border:1px solid #C7E8E3; font:600 13px/1 var(--font-sans); color:#0B7A74;"><span style="width:7px; height:7px; border-radius:50%; background:#0EA5A4;"></span>Stage 1 · Pre-seed / Seed</span>
+            <span style="display:inline-flex; align-items:center; gap:8px; height:32px; padding:0 14px 0 12px; border-radius:9999px; background:#F1F8FF; border:1px solid #CFE6FB; font:600 13px/1 var(--font-sans); color:#0063BE;"><span style="width:7px; height:7px; border-radius:50%; background:#007BE4;"></span>Stage 2 · Series A</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Registration card -->
+      <div style="background:#fff; border:1px solid #E4E8EE; border-radius:20px; box-shadow:0 14px 44px rgba(1,5,42,.10); padding:26px;">
+        <div style="display:flex; align-items:center; gap:16px;">
+          <div style="text-align:center; background:#01052A; color:#fff; border-radius:13px; padding:11px 0; width:66px; flex:none;">
+            <div style="font:700 25px/1 var(--font-display);">02</div>
+            <div style="font:600 11px/1 var(--font-sans); letter-spacing:0.1em; text-transform:uppercase; margin-top:5px; color:#8FC2F2;">Jul</div>
+          </div>
+          <div>
+            <div style="font:700 18px/1.2 var(--font-sans); color:#01052A;">Thursday, July 2</div>
+            <div style="font:500 14px/1.3 var(--font-sans); color:#56646F; margin-top:4px;">8:00 – 9:00 PM PT · 2026</div>
+          </div>
+        </div>
+        <div style="height:1px; background:#EDF0F3; margin:20px 0;"></div>
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:13px;">
+          <span style="color:#007BE4; display:inline-flex;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><rect x="2" y="6" width="14" height="12" rx="2.5"/><path d="m16 10 6-3v10l-6-3"/></svg></span>
+          <span style="font:500 14px/1.3 var(--font-sans); color:#33414D;">Live on Zoom — link on registration</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:13px;">
+          <span style="color:#007BE4; display:inline-flex;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <span style="font:500 14px/1.3 var(--font-sans); color:#33414D;">Members &amp; qualified guests</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span style="color:#007BE4; display:inline-flex;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+          <span style="font:500 14px/1.3 var(--font-sans); color:#33414D;">Hosted by Isaac Kato, Two Ravens VC</span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:22px;">
+          <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" size="lg" full-width="{{ true }}" hint-size="100%,52px">Register to attend</x-import>
+          <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" variant="secondary" size="lg" full-width="{{ true }}" icon-right="calendar" hint-size="100%,52px">Add to calendar</x-import>
+        </div>
+        <p style="font:400 12.5px/1.5 var(--font-sans); color:#9EADBA; margin:14px 0 0; text-align:center;">Registration requires pre-qualification. Not a member yet? <a href="#" style="color:#215BE3; font-weight:600; text-decoration:none;">Apply &rarr;</a></p>
+      </div>
+    </section>
+
+    <!-- What you'll get -->
+    <section style="background:#F6F9FC; padding:56px; border-top:1px solid #EEF1F4; border-bottom:1px solid #EEF1F4;">
+      <div style="display:grid; grid-template-columns:0.78fr 1.22fr; gap:48px; align-items:start;">
+        <div>
+          <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#007BE4; margin-bottom:14px;">In the room</div>
+          <h2 style="font:700 32px/1.15 var(--font-display); letter-spacing:-0.02em; color:#01052A; margin:0;">What you'll walk away with</h2>
+          <p style="font:400 16px/1.6 var(--font-sans); color:#56646F; margin:14px 0 0; max-width:300px;">One focused hour, entirely practical. Bring your own deck and your real questions.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <div style="display:flex; gap:14px; align-items:flex-start;">
+            <span style="flex:none; width:30px; height:30px; border-radius:9px; background:#E3F6EC; color:#1F9D55; display:inline-flex; align-items:center; justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div style="font:600 16px/1.45 var(--font-sans); color:#01052A; padding-top:3px;">A live, slide-by-slide review of a real seed-stage deck</div>
+          </div>
+          <div style="display:flex; gap:14px; align-items:flex-start;">
+            <span style="flex:none; width:30px; height:30px; border-radius:9px; background:#E3F6EC; color:#1F9D55; display:inline-flex; align-items:center; justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div style="font:600 16px/1.45 var(--font-sans); color:#01052A; padding-top:3px;">What a VC actually looks for — and what makes them lose interest</div>
+          </div>
+          <div style="display:flex; gap:14px; align-items:flex-start;">
+            <span style="flex:none; width:30px; height:30px; border-radius:9px; background:#E3F6EC; color:#1F9D55; display:inline-flex; align-items:center; justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div style="font:600 16px/1.45 var(--font-sans); color:#01052A; padding-top:3px;">The line between a slide that works and one that raises questions</div>
+          </div>
+          <div style="display:flex; gap:14px; align-items:flex-start;">
+            <span style="flex:none; width:30px; height:30px; border-radius:9px; background:#E3F6EC; color:#1F9D55; display:inline-flex; align-items:center; justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div style="font:600 16px/1.45 var(--font-sans); color:#01052A; padding-top:3px;">Open Q&amp;A — bring your own deck and fundraising questions</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speaker -->
+    <section style="padding:60px 56px;">
+      <div style="display:grid; grid-template-columns:340px 1fr; gap:44px; align-items:center;">
+        <image-slot id="speaker-a" shape="rounded" radius="18" placeholder="Drop Isaac Kato's photo" style="width:100%; height:400px; display:block; border:1px solid #E4E8EE;"></image-slot>
+        <div>
+          <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#007BE4; margin-bottom:13px;">The VC in the room</div>
+          <h2 style="font:700 30px/1.1 var(--font-display); letter-spacing:-0.02em; color:#01052A; margin:0;">Isaac Kato</h2>
+          <div style="font:600 16px/1.3 var(--font-sans); color:#007BE4; margin-top:6px;">Founding General Partner · Two Ravens VC</div>
+          <p style="font:400 16px/1.65 var(--font-sans); color:#475467; margin:18px 0 0; max-width:560px;">A 3x founder with three exits and two decades investing at the earliest stage. Founding GP of Two Ravens, backing extraordinary founders from non-obvious backgrounds. Previously led the Techstars Seattle and Filecoin accelerators and served as President of Mighty AI, acquired by Uber.</p>
+          <div style="display:flex; gap:36px; margin-top:24px; flex-wrap:wrap;">
+            <div>
+              <div style="font:700 24px/1 var(--font-display); color:#01052A;">$200M+</div>
+              <div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:6px;">capital raised</div>
+            </div>
+            <div>
+              <div style="font:700 24px/1 var(--font-display); color:#01052A;">3 exits</div>
+              <div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:6px;">as a founder</div>
+            </div>
+            <div>
+              <div style="font:700 24px/1 var(--font-display); color:#01052A;">44</div>
+              <div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:6px;">Techstars investments</div>
+            </div>
+            <div>
+              <div style="font:700 24px/1 var(--font-display); color:#01052A;">2 decades</div>
+              <div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:6px;">investing &amp; building</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who it's for / stages -->
+    <section style="padding:60px 56px; background:#FBFCFE; border-top:1px solid #EEF1F4;">
+      <div style="max-width:640px;">
+        <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#007BE4; margin-bottom:14px;">Who this room is for</div>
+        <h2 style="font:700 32px/1.15 var(--font-display); letter-spacing:-0.02em; color:#01052A; margin:0;">Organized by stage and decision — not geography</h2>
+        <p style="font:400 16px/1.6 var(--font-sans); color:#56646F; margin:14px 0 0;">FounderNexus rooms put you with founders carrying the same decision you are. This teardown is built for <strong style="color:#01052A; font-weight:600;">Stage 1–2</strong> founders who are raising or sharpening their story.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:34px;">
+        <!-- Stage 1 active -->
+        <div style="position:relative; background:#fff; border:1px solid #C7E8E3; border-radius:16px; padding:22px; box-shadow:0 6px 20px rgba(14,165,164,.08); overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#0EA5A4;"></div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+            <span style="display:inline-flex; width:40px; height:40px; border-radius:11px; background:#E8F6F4; color:#0B7A74; font:700 16px/1 var(--font-display); align-items:center; justify-content:center;">01</span>
+            <span style="font:600 10.5px/1 var(--font-sans); letter-spacing:0.04em; text-transform:uppercase; color:#0B7A74; background:#E8F6F4; padding:5px 8px; border-radius:9999px;">This session</span>
+          </div>
+          <div style="font:700 17px/1.2 var(--font-sans); color:#01052A;">Stage 1</div>
+          <div style="font:600 13px/1.3 var(--font-sans); color:#0B7A74; margin-top:5px;">$0–2M ARR · Pre-seed / Seed</div>
+          <p style="font:400 13px/1.55 var(--font-sans); color:#56646F; margin:11px 0 0;">MVP, ICP discovery, co-founder fit, early GTM — the search for product-market fit.</p>
+        </div>
+        <!-- Stage 2 active -->
+        <div style="position:relative; background:#fff; border:1px solid #CFE6FB; border-radius:16px; padding:22px; box-shadow:0 6px 20px rgba(0,123,228,.08); overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#007BE4;"></div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+            <span style="display:inline-flex; width:40px; height:40px; border-radius:11px; background:#F1F8FF; color:#0063BE; font:700 16px/1 var(--font-display); align-items:center; justify-content:center;">02</span>
+            <span style="font:600 10.5px/1 var(--font-sans); letter-spacing:0.04em; text-transform:uppercase; color:#0063BE; background:#F1F8FF; padding:5px 8px; border-radius:9999px;">This session</span>
+          </div>
+          <div style="font:700 17px/1.2 var(--font-sans); color:#01052A;">Stage 2</div>
+          <div style="font:600 13px/1.3 var(--font-sans); color:#0063BE; margin-top:5px;">$2–10M ARR · Series A</div>
+          <p style="font:400 13px/1.55 var(--font-sans); color:#56646F; margin:11px 0 0;">A repeatable sales motion, customer profiling, outbound, and the first leadership hires.</p>
+        </div>
+        <!-- Stage 3 muted -->
+        <div style="position:relative; background:#fff; border:1px solid #E7EBF0; border-radius:16px; padding:22px; overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#E1E6EC;"></div>
+          <div style="display:flex; align-items:center; margin-bottom:16px;">
+            <span style="display:inline-flex; width:40px; height:40px; border-radius:11px; background:#F2F4F7; color:#98A2B3; font:700 16px/1 var(--font-display); align-items:center; justify-content:center;">03</span>
+          </div>
+          <div style="font:700 17px/1.2 var(--font-sans); color:#475467;">Stage 3</div>
+          <div style="font:600 13px/1.3 var(--font-sans); color:#98A2B3; margin-top:5px;">$10–50M ARR · Series B / C</div>
+          <p style="font:400 13px/1.55 var(--font-sans); color:#98A2B3; margin:11px 0 0;">Senior and executive hires, board dynamics, and the first hard scaling decisions.</p>
+        </div>
+        <!-- Stage 4 muted -->
+        <div style="position:relative; background:#fff; border:1px solid #E7EBF0; border-radius:16px; padding:22px; overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#E1E6EC;"></div>
+          <div style="display:flex; align-items:center; margin-bottom:16px;">
+            <span style="display:inline-flex; width:40px; height:40px; border-radius:11px; background:#F2F4F7; color:#98A2B3; font:700 16px/1 var(--font-display); align-items:center; justify-content:center;">04</span>
+          </div>
+          <div style="font:700 17px/1.2 var(--font-sans); color:#475467;">Stage 4</div>
+          <div style="font:600 13px/1.3 var(--font-sans); color:#98A2B3; margin-top:5px;">$50M+ ARR · Series D+</div>
+          <p style="font:400 13px/1.55 var(--font-sans); color:#98A2B3; margin:11px 0 0;">Executive redesign, board pressure, and market expansion — the decisions of a mature company.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section style="padding:60px 56px;">
+      <div style="background:linear-gradient(135deg, #007BE4, #215BE3); border-radius:24px; padding:50px 48px; color:#fff; display:flex; justify-content:space-between; align-items:center; gap:36px; flex-wrap:wrap;">
+        <div style="max-width:560px;">
+          <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#BFE0FF;">Thursday, July 2 · 8:00 PM PT</div>
+          <h2 style="font:700 34px/1.12 var(--font-display); letter-spacing:-0.02em; margin:12px 0 0;">Save your seat in the room.</h2>
+          <p style="font:400 16px/1.55 var(--font-sans); margin:12px 0 0; opacity:0.92;">Seats are limited to keep the live Q&amp;A useful. Pre-qualified founders can register now.</p>
+        </div>
+        <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" variant="secondary" size="lg" hint-size="190px,52px">Register to attend</x-import>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding:30px 56px; border-top:1px solid #EEF1F4; display:flex; justify-content:space-between; align-items:center;">
+      <img src="assets/foundernexus-wordmark-navy.png" alt="FounderNexus" style="height:20px; width:auto; opacity:0.85;" />
+      <div style="font:500 13px/1 var(--font-sans); color:#9EADBA;">© 2026 FounderNexus · Seattle · Online · Everywhere your chapter is</div>
+    </footer>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- DIRECTION B — Premier (navy hero + floating ticket)          -->
+<!-- ============================================================ -->
+<div style="position:absolute; left:1400px; top:0; width:1280px;">
+  <div data-drags-parent="1" style="display:flex; align-items:center; gap:10px; margin:0 0 14px 4px;">
+    <span style="font:700 14px/1 var(--font-sans); color:#01052A; letter-spacing:-0.01em;">Direction B</span>
+    <span style="font:500 13px/1 var(--font-sans); color:#56646F;">Premier — navy hero + ticket · open to guests</span>
+  </div>
+
+  <div style="background:#fff; border:1px solid #ECEEF1; border-radius:10px; overflow:hidden; box-shadow:0 1px 3px rgba(1,5,42,.08), 0 24px 60px rgba(1,5,42,.07);">
+
+    <!-- Navy hero -->
+    <div style="position:relative; background:#061B2C; overflow:hidden;">
+      <div style="position:absolute; top:-180px; right:-120px; width:560px; height:560px; border-radius:50%; background:radial-gradient(circle, rgba(0,123,228,0.32), rgba(0,123,228,0) 65%);"></div>
+      <div style="position:absolute; bottom:-220px; left:-160px; width:520px; height:520px; border-radius:50%; background:radial-gradient(circle, rgba(45,212,191,0.14), rgba(45,212,191,0) 68%);"></div>
+
+      <!-- Header on navy -->
+      <header style="position:relative; display:flex; align-items:center; justify-content:space-between; height:74px; padding:0 56px;">
+        <div style="display:flex; align-items:center; gap:38px;">
+          <img src="assets/foundernexus-wordmark-white.png" alt="FounderNexus" style="height:24px; width:auto;" />
+          <nav style="display:flex; gap:26px;">
+            <a href="#" style="font:600 14px/1 var(--font-sans); color:#fff; text-decoration:none;">Events</a>
+            <a href="#" style="font:500 14px/1 var(--font-sans); color:rgba(255,255,255,.62); text-decoration:none;">How it works</a>
+            <a href="#" style="font:500 14px/1 var(--font-sans); color:rgba(255,255,255,.62); text-decoration:none;">Chapters</a>
+          </nav>
+        </div>
+        <div style="display:flex; align-items:center; gap:14px;">
+          <a href="#" style="font:600 14px/1 var(--font-sans); color:rgba(255,255,255,.78); text-decoration:none;">Log in</a>
+          <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" variant="secondary" size="sm" hint-size="150px,36px">Apply for membership</x-import>
+        </div>
+      </header>
+
+      <!-- Hero content -->
+      <div style="position:relative; padding:54px 56px 150px; max-width:880px; margin:0 auto; text-align:center;">
+        <div style="display:inline-flex; align-items:center; gap:10px; margin-bottom:24px;">
+          <span style="display:inline-flex; align-items:center; gap:7px; height:30px; padding:0 13px; border-radius:9999px; background:rgba(224,72,59,.16); border:1px solid rgba(224,72,59,.4); color:#FF8B7E; font:600 12px/1 var(--font-sans);">
+            <span style="width:7px; height:7px; border-radius:50%; background:#FF6A58; box-shadow:0 0 0 3px rgba(255,106,88,.22);"></span>Live session
+          </span>
+          <span style="font:600 12px/1 var(--font-sans); letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,.5);">Fundraising · Expert teardown</span>
+        </div>
+        <h1 style="font:700 60px/1.04 var(--font-display); letter-spacing:-0.03em; color:#fff; margin:0;">Pitch Deck Teardown, live.</h1>
+        <p style="font:400 20px/1.6 var(--font-sans); color:rgba(255,255,255,.74); margin:22px auto 0; max-width:600px;">A seasoned VC opens a real founder's seed deck — slide by slide — and reacts exactly as he would in a partner meeting. No hypotheticals, no polished "after" version.</p>
+        <div style="display:flex; gap:10px; justify-content:center; margin-top:28px; flex-wrap:wrap;">
+          <span style="display:inline-flex; align-items:center; gap:8px; height:32px; padding:0 14px 0 12px; border-radius:9999px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.16); font:600 13px/1 var(--font-sans); color:#fff;"><span style="width:7px; height:7px; border-radius:50%; background:#2DD4BF;"></span>Stage 1 · Pre-seed / Seed</span>
+          <span style="display:inline-flex; align-items:center; gap:8px; height:32px; padding:0 14px 0 12px; border-radius:9999px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.16); font:600 13px/1 var(--font-sans); color:#fff;"><span style="width:7px; height:7px; border-radius:50%; background:#4DA8F5;"></span>Stage 2 · Series A</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating ticket -->
+    <div style="padding:0 56px; margin-top:-94px; position:relative; z-index:2;">
+      <div style="background:#fff; border:1px solid #E7EBF0; border-radius:20px; box-shadow:0 24px 60px rgba(1,5,42,.22); padding:24px 30px; display:flex; align-items:center; gap:28px;">
+        <div style="text-align:center; background:#061B2C; color:#fff; border-radius:14px; padding:13px 0; width:78px; flex:none;">
+          <div style="font:700 28px/1 var(--font-display);">02</div>
+          <div style="font:600 11px/1 var(--font-sans); letter-spacing:0.12em; text-transform:uppercase; margin-top:5px; color:#8FC2F2;">Jul</div>
+        </div>
+        <div style="flex:none;">
+          <div style="font:600 11px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#9EADBA; margin-bottom:7px;">When</div>
+          <div style="font:700 16px/1.25 var(--font-sans); color:#01052A;">Thu, July 2</div>
+          <div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:2px;">8:00–9:00 PM PT</div>
+        </div>
+        <div style="width:1px; align-self:stretch; background:#EDF0F3;"></div>
+        <div style="flex:none;">
+          <div style="font:600 11px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#9EADBA; margin-bottom:7px;">Where</div>
+          <div style="display:flex; align-items:center; gap:8px; font:700 16px/1.25 var(--font-sans); color:#01052A;"><span style="color:#007BE4; display:inline-flex;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2.5"/><path d="m16 10 6-3v10l-6-3"/></svg></span>Live on Zoom</div>
+          <div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:2px;">Link sent on registration</div>
+        </div>
+        <div style="width:1px; align-self:stretch; background:#EDF0F3;"></div>
+        <div style="flex:1;">
+          <div style="font:600 11px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#9EADBA; margin-bottom:7px;">Access</div>
+          <div style="font:700 16px/1.25 var(--font-sans); color:#01052A;">Open to guests</div>
+          <div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:2px;">Members &amp; invited founders</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:8px; flex:none; width:200px;">
+          <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" size="lg" full-width="{{ true }}" hint-size="100%,52px">Save your seat</x-import>
+          <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" variant="ghost" size="sm" full-width="{{ true }}" icon-right="calendar" hint-size="100%,36px">Add to calendar</x-import>
+        </div>
+      </div>
+    </div>
+
+    <!-- What you'll get — 4 columns -->
+    <section style="padding:64px 56px 56px;">
+      <div style="text-align:center; max-width:620px; margin:0 auto 40px;">
+        <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#007BE4; margin-bottom:14px;">In the room</div>
+        <h2 style="font:700 32px/1.15 var(--font-display); letter-spacing:-0.02em; color:#01052A; margin:0;">One hour, entirely practical</h2>
+        <p style="font:400 16px/1.6 var(--font-sans); color:#56646F; margin:13px 0 0;">No theory. A real deck, a real investor's reactions, and time for your own questions.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:26px;">
+        <div>
+          <div style="font:700 15px/1 var(--font-display); color:#007BE4;">01</div>
+          <div style="height:2px; width:30px; background:#D3EAFD; margin:14px 0 16px;"></div>
+          <div style="font:600 16px/1.45 var(--font-sans); color:#01052A;">A live, slide-by-slide review of a real seed-stage deck</div>
+        </div>
+        <div>
+          <div style="font:700 15px/1 var(--font-display); color:#007BE4;">02</div>
+          <div style="height:2px; width:30px; background:#D3EAFD; margin:14px 0 16px;"></div>
+          <div style="font:600 16px/1.45 var(--font-sans); color:#01052A;">What a VC looks for — and what makes them lose interest</div>
+        </div>
+        <div>
+          <div style="font:700 15px/1 var(--font-display); color:#007BE4;">03</div>
+          <div style="height:2px; width:30px; background:#D3EAFD; margin:14px 0 16px;"></div>
+          <div style="font:600 16px/1.45 var(--font-sans); color:#01052A;">The line between a slide that works and one that raises questions</div>
+        </div>
+        <div>
+          <div style="font:700 15px/1 var(--font-display); color:#007BE4;">04</div>
+          <div style="height:2px; width:30px; background:#D3EAFD; margin:14px 0 16px;"></div>
+          <div style="font:600 16px/1.45 var(--font-sans); color:#01052A;">Open Q&amp;A — bring your own deck and fundraising questions</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speaker band -->
+    <section style="padding:8px 56px 60px;">
+      <div style="background:#F6F9FC; border:1px solid #EAEFF4; border-radius:24px; padding:36px; display:grid; grid-template-columns:280px 1fr; gap:40px; align-items:center;">
+        <image-slot id="speaker-b" shape="rounded" radius="16" placeholder="Drop Isaac Kato's photo" style="width:100%; height:320px; display:block; border:1px solid #E4E8EE;"></image-slot>
+        <div>
+          <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#007BE4; margin-bottom:13px;">The VC in the room</div>
+          <h2 style="font:700 30px/1.1 var(--font-display); letter-spacing:-0.02em; color:#01052A; margin:0;">Isaac Kato</h2>
+          <div style="font:600 16px/1.3 var(--font-sans); color:#007BE4; margin-top:6px;">Founding General Partner · Two Ravens VC</div>
+          <p style="font:400 16px/1.65 var(--font-sans); color:#475467; margin:16px 0 0; max-width:560px;">A 3x founder with three exits and two decades investing at the earliest stage. Founding GP of Two Ravens, backing extraordinary founders from non-obvious backgrounds. Previously led the Techstars Seattle and Filecoin accelerators and served as President of Mighty AI, acquired by Uber.</p>
+          <div style="display:flex; gap:32px; margin-top:22px; flex-wrap:wrap;">
+            <div><div style="font:700 23px/1 var(--font-display); color:#01052A;">$200M+</div><div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:6px;">capital raised</div></div>
+            <div><div style="font:700 23px/1 var(--font-display); color:#01052A;">3 exits</div><div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:6px;">as a founder</div></div>
+            <div><div style="font:700 23px/1 var(--font-display); color:#01052A;">44</div><div style="font:500 13px/1.3 var(--font-sans); color:#56646F; margin-top:6px;">Techstars investments</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stages -->
+    <section style="padding:8px 56px 60px;">
+      <div style="max-width:640px;">
+        <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#007BE4; margin-bottom:14px;">Who this room is for</div>
+        <h2 style="font:700 32px/1.15 var(--font-display); letter-spacing:-0.02em; color:#01052A; margin:0;">Organized by stage and decision</h2>
+        <p style="font:400 16px/1.6 var(--font-sans); color:#56646F; margin:14px 0 0;">FounderNexus rooms put you with founders carrying the same decision you are. This teardown is built for <strong style="color:#01052A; font-weight:600;">Stage 1–2</strong> founders who are raising or sharpening their story.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:34px;">
+        <div style="position:relative; background:#fff; border:1px solid #C7E8E3; border-radius:16px; padding:22px; box-shadow:0 6px 20px rgba(14,165,164,.08); overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#0EA5A4;"></div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+            <span style="display:inline-flex; width:40px; height:40px; border-radius:11px; background:#E8F6F4; color:#0B7A74; font:700 16px/1 var(--font-display); align-items:center; justify-content:center;">01</span>
+            <span style="font:600 10.5px/1 var(--font-sans); letter-spacing:0.04em; text-transform:uppercase; color:#0B7A74; background:#E8F6F4; padding:5px 8px; border-radius:9999px;">This session</span>
+          </div>
+          <div style="font:700 17px/1.2 var(--font-sans); color:#01052A;">Stage 1</div>
+          <div style="font:600 13px/1.3 var(--font-sans); color:#0B7A74; margin-top:5px;">$0–2M ARR · Pre-seed / Seed</div>
+          <p style="font:400 13px/1.55 var(--font-sans); color:#56646F; margin:11px 0 0;">MVP, ICP discovery, co-founder fit, early GTM — the search for product-market fit.</p>
+        </div>
+        <div style="position:relative; background:#fff; border:1px solid #CFE6FB; border-radius:16px; padding:22px; box-shadow:0 6px 20px rgba(0,123,228,.08); overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#007BE4;"></div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+            <span style="display:inline-flex; width:40px; height:40px; border-radius:11px; background:#F1F8FF; color:#0063BE; font:700 16px/1 var(--font-display); align-items:center; justify-content:center;">02</span>
+            <span style="font:600 10.5px/1 var(--font-sans); letter-spacing:0.04em; text-transform:uppercase; color:#0063BE; background:#F1F8FF; padding:5px 8px; border-radius:9999px;">This session</span>
+          </div>
+          <div style="font:700 17px/1.2 var(--font-sans); color:#01052A;">Stage 2</div>
+          <div style="font:600 13px/1.3 var(--font-sans); color:#0063BE; margin-top:5px;">$2–10M ARR · Series A</div>
+          <p style="font:400 13px/1.55 var(--font-sans); color:#56646F; margin:11px 0 0;">A repeatable sales motion, customer profiling, outbound, and the first leadership hires.</p>
+        </div>
+        <div style="position:relative; background:#fff; border:1px solid #E7EBF0; border-radius:16px; padding:22px; overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#E1E6EC;"></div>
+          <div style="display:flex; align-items:center; margin-bottom:16px;">
+            <span style="display:inline-flex; width:40px; height:40px; border-radius:11px; background:#F2F4F7; color:#98A2B3; font:700 16px/1 var(--font-display); align-items:center; justify-content:center;">03</span>
+          </div>
+          <div style="font:700 17px/1.2 var(--font-sans); color:#475467;">Stage 3</div>
+          <div style="font:600 13px/1.3 var(--font-sans); color:#98A2B3; margin-top:5px;">$10–50M ARR · Series B / C</div>
+          <p style="font:400 13px/1.55 var(--font-sans); color:#98A2B3; margin:11px 0 0;">Senior and executive hires, board dynamics, and the first hard scaling decisions.</p>
+        </div>
+        <div style="position:relative; background:#fff; border:1px solid #E7EBF0; border-radius:16px; padding:22px; overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:4px; background:#E1E6EC;"></div>
+          <div style="display:flex; align-items:center; margin-bottom:16px;">
+            <span style="display:inline-flex; width:40px; height:40px; border-radius:11px; background:#F2F4F7; color:#98A2B3; font:700 16px/1 var(--font-display); align-items:center; justify-content:center;">04</span>
+          </div>
+          <div style="font:700 17px/1.2 var(--font-sans); color:#475467;">Stage 4</div>
+          <div style="font:600 13px/1.3 var(--font-sans); color:#98A2B3; margin-top:5px;">$50M+ ARR · Series D+</div>
+          <p style="font:400 13px/1.55 var(--font-sans); color:#98A2B3; margin:11px 0 0;">Executive redesign, board pressure, and market expansion — the decisions of a mature company.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA navy -->
+    <section style="position:relative; background:#061B2C; padding:68px 56px; text-align:center; overflow:hidden;">
+      <div style="position:absolute; top:-160px; left:50%; transform:translateX(-50%); width:620px; height:420px; background:radial-gradient(ellipse, rgba(0,123,228,0.28), rgba(0,123,228,0) 65%);"></div>
+      <div style="position:relative;">
+        <div style="font:600 12px/1 var(--font-sans); letter-spacing:0.05em; text-transform:uppercase; color:#8FC2F2;">Thursday, July 2 · 8:00 PM PT</div>
+        <h2 style="font:700 36px/1.12 var(--font-display); letter-spacing:-0.02em; color:#fff; margin:14px 0 0;">Save your seat in the room.</h2>
+        <p style="font:400 17px/1.55 var(--font-sans); color:rgba(255,255,255,.72); margin:13px auto 0; max-width:520px;">Seats are limited to keep the live Q&amp;A useful. Members and invited founders can register now.</p>
+        <div style="display:inline-flex; gap:12px; margin-top:26px;">
+          <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" variant="secondary" size="lg" hint-size="170px,52px">Save your seat</x-import>
+          <x-import component-from-global-scope="FounderNexusDesignSystem_c60151.Button" variant="ghost" size="lg" icon-right="arrow-right" hint-size="160px,52px" style="color:#fff;">Invite a founder</x-import>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding:30px 56px; background:#03101C; display:flex; justify-content:space-between; align-items:center;">
+      <img src="assets/foundernexus-wordmark-white.png" alt="FounderNexus" style="height:20px; width:auto; opacity:0.9;" />
+      <div style="font:500 13px/1 var(--font-sans); color:rgba(255,255,255,.45);">© 2026 FounderNexus · Seattle · Online · Everywhere your chapter is</div>
+    </footer>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
