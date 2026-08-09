@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>FounderNexus Events — Design Review</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --card: #141a2e;
+    --card-hover: #1b2340;
+    --ink: #eef1f8;
+    --muted: #9aa3bd;
+    --line: #263050;
+    --accent: #6c7bff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 64px 24px 80px; }
+  .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; margin: 0 0 12px; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 12px; }
+  .lead { color: var(--muted); font-size: 17px; line-height: 1.5; margin: 0 0 40px; max-width: 620px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 22px 22px 20px; transition: background .15s ease, transform .15s ease, border-color .15s ease;
+  }
+  a.card:hover { background: var(--card-hover); transform: translateY(-2px); border-color: var(--accent); }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; margin-bottom: 14px; }
+  .tag.live { color: #12d18e; border-color: #1c5a45; background: rgba(18,209,142,.08); }
+  .card h2 { font-size: 19px; margin: 0 0 6px; }
+  .card p { color: var(--muted); font-size: 14px; line-height: 1.45; margin: 0; }
+  .go { margin-top: 16px; color: var(--accent); font-size: 14px; font-weight: 600; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">FounderNexus Events</p>
+    <h1>Landing page — design review</h1>
+    <p class="lead">Five directions for the events landing page. The first is the current live page. Click any card to open that version full-screen, then use your browser back button to return here.</p>
+
+    <div class="grid">
+      <a class="card" href="index.html">
+        <span class="tag live">Live page</span>
+        <h2>Main</h2>
+        <p>The current published version of the events landing page.</p>
+        <div class="go">Open →</div>
+      </a>
+      <a class="card" href="editorial.html">
+        <span class="tag">Variant</span>
+        <h2>Editorial</h2>
+        <p>Type-forward, magazine-style layout.</p>
+        <div class="go">Open →</div>
+      </a>
+      <a class="card" href="flat-navy.html">
+        <span class="tag">Variant</span>
+        <h2>Flat Navy</h2>
+        <p>Clean, flat design on a deep navy base.</p>
+        <div class="go">Open →</div>
+      </a>
+      <a class="card" href="photo-hero.html">
+        <span class="tag">Variant</span>
+        <h2>Photo Hero</h2>
+        <p>Large photographic hero leading the page.</p>
+        <div class="go">Open →</div>
+      </a>
+      <a class="card" href="series-anchored.html">
+        <span class="tag">Variant</span>
+        <h2>Series Anchored</h2>
+        <p>Framed around the event series structure.</p>
+        <div class="go">Open →</div>
+      </a>
+    </div>
+
+    <footer>Review page — not linked from the live site.</footer>
+  </div>
+</body>
+</html>
